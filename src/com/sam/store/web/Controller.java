@@ -90,6 +90,7 @@ public class Controller extends HttpServlet {
             String pattern = "^((((19|20)(([02468][048])|([13579][26]))-02-29))|((20[0-9][0-9])|(19[0-9][0-9]))-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))$";
             if(!Pattern.matches(pattern, birthday)){
                 errors.add("生日格式錯誤！");
+                System.out.println("hello git");
             }
 
             if(errors.size() > 0){
