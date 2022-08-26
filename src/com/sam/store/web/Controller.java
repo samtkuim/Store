@@ -28,6 +28,7 @@ public class Controller extends HttpServlet {
     private GoodsService goodsService = new GoodsServiceImpl();
     private OrdersService ordersService = new OrdersServiceImpl();
     private int pageeeeeeeee;
+    private String masterTest;
     private int totalPageNumber = 0;//總頁數
     private int pageSize = 10;//一頁有幾筆資料
     private int currentPage = 1;//當前頁數
